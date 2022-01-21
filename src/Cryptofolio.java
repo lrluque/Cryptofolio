@@ -5,25 +5,17 @@ import java.util.Scanner;
 public class Cryptofolio {
     public void menuPrincipal(Scanner scan) {
         System.out.println("\n\n\n\n");
-        System.out.println("  ______                                  __                 ______            __  __           \n" +
-                " /      \\                                |  \\               /      \\          |  \\|  \\          \n" +
-                "|  $$$$$$\\  ______   __    __   ______  _| $$_     ______  |  $$$$$$\\ ______  | $$ \\$$  ______  \n" +
-                "| $$   \\$$ /      \\ |  \\  |  \\ /      \\|   $$ \\   /      \\ | $$_  \\$$/      \\ | $$|  \\ /      \\ \n" +
-                "| $$      |  $$$$$$\\| $$  | $$|  $$$$$$\\\\$$$$$$  |  $$$$$$\\| $$ \\   |  $$$$$$\\| $$| $$|  $$$$$$\\\n" +
-                "| $$   __ | $$   \\$$| $$  | $$| $$  | $$ | $$ __ | $$  | $$| $$$$   | $$  | $$| $$| $$| $$  | $$\n" +
-                "| $$__/  \\| $$      | $$__/ $$| $$__/ $$ | $$|  \\| $$__/ $$| $$     | $$__/ $$| $$| $$| $$__/ $$\n" +
-                " \\$$    $$| $$       \\$$    $$| $$    $$  \\$$  $$ \\$$    $$| $$      \\$$    $$| $$| $$ \\$$    $$\n" +
-                "  \\$$$$$$  \\$$       _\\$$$$$$$| $$$$$$$    \\$$$$   \\$$$$$$  \\$$       \\$$$$$$  \\$$ \\$$  \\$$$$$$ \n" +
-                "                    |  \\__| $$| $$                                                              \n" +
-                "                     \\$$    $$| $$                                                              \n" +
-                "                      \\$$$$$$  \\$$                                                              \n" +
-                "\n");
-        System.out.print("----------------------------------------------------------------------------------------------------\n\n");
+        System.out.println(" ██████ ██████  ██    ██ ██████  ████████  ██████  ███████  ██████  ██      ██  ██████  \n" +
+                "██      ██   ██  ██  ██  ██   ██    ██    ██    ██ ██      ██    ██ ██      ██ ██    ██ \n" +
+                "██      ██████    ████   ██████     ██    ██    ██ █████   ██    ██ ██      ██ ██    ██ \n" +
+                "██      ██   ██    ██    ██         ██    ██    ██ ██      ██    ██ ██      ██ ██    ██ \n" +
+                " ██████ ██   ██    ██    ██         ██     ██████  ██       ██████  ███████ ██  ██████  \n");
+        System.out.print("----------------------------------------------------------------------------------------------------\n");
 
 
         int choice = 0;
         do {
-            System.out.println("\n\n\nWelcome to Cryptofolio!\n\n1) Add coin\n2) Add transaction\n3) Transaction history\n4) Coins\n5) Save data\n6) Load data\n7) Exit\n");
+            System.out.println("Welcome to Cryptofolio!\n\n1) Add coin\n2) Add transaction\n3) Transaction history\n4) Coins\n5) Save data\n6) Load data\n7) Exit\n");
             try {
                 choice = scan.nextInt();
                 switch (choice) {
@@ -67,7 +59,6 @@ public class Cryptofolio {
     }
 
     public void addCoinMenu(Scanner scan){
-        boolean validInput = false;
         scan.nextLine();
         String url = null;
         String coinName = null;
